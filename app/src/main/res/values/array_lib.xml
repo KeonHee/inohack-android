@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lib">
+        <item>하이테크공대도서관</item>
+        <item>해동학술정보관</item>
+        <item>정석1열람실</item>
+        <item>정석2열람실</item>
+        <item>정석3열람실</item>
+    </string-array>
+
+</resources>

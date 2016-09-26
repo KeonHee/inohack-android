@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.inha.inohack.libfresh"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.diogobernardino:williamchart:2.2'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    //font
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile files('libs/google-http-client-1.21.0.jar')
+    compile files('libs/google-http-client-android-1.21.0.jar')
+    compile files('libs/google-http-client-jackson2-1.21.0.jar')
+    compile files('libs/google-http-client-jackson-1.21.0.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/jackson-core-2.1.3.jar')
+    compile files('libs/jackson-core-asl-1.9.11.jar')
+    compile files('libs/jsr305-1.3.9.jar')
+    compile files('libs/protobuf-java-2.4.1.jar')
+    compile files('libs/google-http-client-xml-1.21.0.jar')
+    compile files('libs/mpandroidchartlibrary-2-2-4.jar')
+}

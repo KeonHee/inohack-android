@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">libfresh</string>
+
+    <string name="jungsuk_lib">정석학술 정보관</string>
+    <string name="it_engineer_lib">IT공과대학</string>
+    <string name="engineer_lib">공과대학</string>
+    <string name="liberal_lib">문과대학</string>
+    <string name="business_lib">경상대학</string>
+    <string name="education_lib">사범대학</string>
+    <string name="living_lib">사범대학</string>
+
+
+</resources>

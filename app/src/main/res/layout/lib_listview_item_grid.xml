@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_blue">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="정석학술 정보관"-->
+                <!--android:id="@+id/lib_name"-->
+                <!--android:textSize="28dp"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:textAppearance="@style/TextAppearance.JUA"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="2016-09-24 13:40 현재"-->
+                <!--android:id="@+id/datetime"-->
+                <!--android:textSize="12dp"-->
+                <!--android:textColor="#FFFFFF"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:textAppearance="@style/TextAppearance.JUA"/>-->
+
+        <!--</RelativeLayout>-->
+
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:background="@color/dark_blue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정석학술 정보관"
+                android:id="@+id/lib_name"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_columnSpan="3"
+                android:textAppearance="@style/TextAppearance.JUA"/>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/jh_sun_good"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="온도"
+                android:id="@+id/labelTemperature"
+                android:textSize="28dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:textAppearance="@style/TextAppearance.JUA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="26.5\u00B0C"
+        android:id="@+id/textTemperature"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textAppearance="@style/TextAppearance.JUA"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50 %"
+        android:id="@+id/labelHumidity"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textAppearance="@style/TextAppearance.JUA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="습도"
+        android:id="@+id/textHumidity"
+        android:textSize="28dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textAppearance="@style/TextAppearance.JUA"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/jh_raindrop_normal"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/jh_cloud_bad"
+        android:layout_columnWeight="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 공기\n오염도"
+        android:id="@+id/labelAirPollution"
+        android:textSize="28dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textAppearance="@style/TextAppearance.JUA"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:id="@+id/textAirPollution"
+        android:textSize="35dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_columnWeight="1"
+        android:textAppearance="@style/TextAppearance.JUA"/>
+</GridLayout>
+</LinearLayout>
